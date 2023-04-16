@@ -8,7 +8,7 @@ const Aside = () => {
    const location = useLocation()
    const currentItem = aside_menu.filter(menuitem => menuitem.link === location.pathname);
    useEffect(() => {
-      document.title =  ' UtilitySender '+ currentItem[0].name;
+      document.title =  ' Utility Sender / '+ currentItem[0].name;
     }, [currentItem]);
 
 
